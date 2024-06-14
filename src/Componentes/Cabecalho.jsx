@@ -7,7 +7,7 @@ export function Cabecalho(){
 
     const handleLogout = async () => {
         try {
-            const response = await fetch('admin/logout/', {
+            const response = await fetch('https://anabeatriztorrecilas.pythonanywhere.com/admin/logout/', {
                 method: 'GET', 
                 credentials: 'same-origin' 
             });
