@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(to bottom, #BB1141 0%, #DE003F 76%);
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    background-color: #DE013F;
+}
+
+.titulo {
+    font-size: 18px; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.campo {
+    background-color: #FFE4E4; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border-radius: 6px; 
+    border: 1px solid #FFE4E4; 
+}
+
+.botao {
+    background-color: #DE013F; 
+    padding: 10px; 
+    border-radius: 8px; 
+    border: none; 
+    color: white; 
+    font-weight: bold; 
+    cursor: pointer; 
+    justify-content: center;
+    align-items: center;
+}
+
+.mensagem {
+    font-size: 12px; 
+    font-weight: bold; 
+    color: #DE003F; 
+    margin-bottom: 10px; 
+}
+
+.logo {
+    max-width: 50%;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 10px;
+    display: block; 
+    text-align: center; 
+}
