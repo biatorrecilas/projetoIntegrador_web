@@ -13,7 +13,7 @@ export function GraficoTemperatura() {
             try {
                 const token = localStorage.getItem('access_token');
                 const requestData = {
-                    sensor_id: 9,
+                    sensor_id: 17,
                     valor_gte: 10,
                     valor_lt: 34,
                     timestamp_gte: "2024-04-01T00:00:00",
@@ -66,7 +66,7 @@ export function GraficoTemperatura() {
 
     return (
         <div style={{backgroundColor: 'black'}}>
-            <p style={{color: 'white'}}>O gráfico apresenta a variação da temperatura registrada pelo sensor de ID 9,<br></br> entre 10°C e 34°C, durante o período de 1 de abril de 2024. </p>
+            <p style={{color: 'white'}}>O gráfico apresenta a variação da temperatura registrada pelo sensor no Laboratório de Informática A103,<br></br> entre 10°C e 34°C, durante o período de 1 de abril de 2024. </p>
             <div style={{ width: '600px', height: '400px', margin: '0 auto', backgroundColor: 'black', padding: '20px', borderRadius: '10px' }}>
                 {chartData && chartData.labels ? (
                     <Line 
