@@ -63,7 +63,7 @@ export function Cadastro() {
                     <input className={estilos.campo}
                         {...register('email')} placeholder="Email Address"
                     />
-                    {errors.usuario && (
+                    {errors.email && (
                         <p className={estilos.mensagem}>{errors.email.message}</p>
                     )}
 
