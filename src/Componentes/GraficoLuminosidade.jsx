@@ -13,7 +13,7 @@ export function GraficoLuminosidade() {
             try {
                 const token = localStorage.getItem('access_token');
                 const requestData = {
-                    sensor_id: 19,
+                    sensor_id: 20,
                     valor_gte: 10,
                     valor_lt: 1000,
                     timestamp_gte: "2024-04-21T00:00:00",
@@ -66,7 +66,7 @@ export function GraficoLuminosidade() {
 
     return (
         <div style={{backgroundColor: 'black'}}>
-            <p style={{color: 'white'}}>Este gráfico mostra a variação da luminosidade capturada pelo sensor de ID 19,<br></br> no intervalo entre 10 e 1000 unidades, ao longo do dia 21 de abril de 2024.</p>
+            <p style={{color: 'white'}}>Este gráfico mostra a variação da luminosidade capturada pelo sensor na Coordenação Pedagógica,<br></br> no intervalo entre 10 e 1000 unidades, ao longo do dia 21 de abril de 2024.</p>
             <div style={{ width: '600px', height: '400px', margin: '0 auto', backgroundColor: 'black', padding: '20px', borderRadius: '10px' }}>
                 {chartData && chartData.labels ? (
                     <Line 
