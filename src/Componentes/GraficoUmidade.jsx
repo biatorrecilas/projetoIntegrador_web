@@ -13,7 +13,7 @@ export function GraficoUmidade() {
             try {
                 const token = localStorage.getItem('access_token');
                 const requestData = {
-                    sensor_id: 2,
+                    sensor_id: 95,
                     valor_gte: 10,
                     valor_lt: 80,
                     timestamp_gte: "2024-04-01T00:00:00",
@@ -66,7 +66,7 @@ export function GraficoUmidade() {
 
     return (
         <div style={{backgroundColor: 'black'}}>
-            <p style={{color: 'white'}}>Este gráfico ilustra a variação da umidade registrada pelo sensor de ID 2,<br></br> com valores entre 10% e 80%, durante o período de 1 de abril de 2024. </p>
+            <p style={{color: 'white'}}>Este gráfico ilustra a variação da umidade registrada pelo sensor localizado na Arvore 4 - Ficheira,<br></br> com valores entre 10% e 80%, durante o período de 1 de abril de 2024. </p>
             <div style={{ width: '600px', height: '400px', margin: '0 auto', backgroundColor: 'black', padding: '20px', borderRadius: '10px' }}>
                 {chartData && chartData.labels ? (
                     <Line 
