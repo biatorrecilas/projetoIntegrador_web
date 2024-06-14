@@ -57,7 +57,7 @@ export function GraficoContador() {
 
     return (
         <div style={{backgroundColor: 'black', color: 'white'}}>
-            <p>O gráfico de barras apresenta o total de registros capturados pelo sensor de ID 70<br></br> durante o mês de abril de 2024. O período considerado é de 1 de abril até 30 de abril.</p>
+            <p>O gráfico de barras apresenta o total de registros capturados pelo sensor no Espaço Cultural<br></br> durante o mês de abril de 2024. O período considerado é de 1 de abril até 30 de abril.</p>
             <h2>Total de registros: {contador}</h2>
             <div style={{ width: '400px', height: '400px', margin: '20px auto' }}>
                 <Bar data={data} />
