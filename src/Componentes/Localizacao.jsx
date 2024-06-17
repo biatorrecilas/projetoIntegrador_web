@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+
+import markerIcon from './marker-icon.png';
+import markerIcon2x from './marker-icon-2x.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
 export default function Localizacao({ pontos }) {
     const [mapaInicializado, setMapaInicializado] = useState(false);
