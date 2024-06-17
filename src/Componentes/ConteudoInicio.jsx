@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { LuMousePointerClick } from "react-icons/lu";
 import estilos from './ConteudoInicio.module.css';
 import imagemSENAI from '../assets/imagemSENAI.jpg';
 
@@ -61,7 +62,7 @@ export function ConteudoInicio() {
             <h1 style={{ marginTop: '100px' }}>Campinas,   {temperatura !== null ? `${temperatura}°C` : 'Carregando...'}</h1>
             <div className={estilos.linha}></div>
             <h2>{dataHora !== null ? dataHora : 'Carregando...'}</h2>
-            <button className={estilos.botao} onClick={abrirModal}>Bem vindo, {usuario}! Clique e conheça o Projeto aqui</button>
+            <button className={estilos.botao} onClick={abrirModal}>Bem vindo, {usuario}! Conheça o projeto aqui <LuMousePointerClick size={15} /></button>
             {modalAberto && (
                 <div className={estilos.modal}>
                     <div className={estilos.modalConteudo}>
