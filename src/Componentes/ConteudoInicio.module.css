@@ -28,6 +28,10 @@
     border: none;
 }
 
+.botao:hover {
+    background-color: #a50131;
+}
+
 .modal {
     position: fixed;
     top: 0;
