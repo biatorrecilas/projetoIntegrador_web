@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+
+// Importar os ícones de marcadores diretamente com URLs absolutas
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
 export default function Localizacao({ pontos }) {
     const [mapaInicializado, setMapaInicializado] = useState(false);
@@ -17,6 +23,21 @@ export default function Localizacao({ pontos }) {
     
     // Definir o nível de zoom adequado com base na escala dos pontos
     const zoomLevel = calcularZoomLevel(pontos);
+
+    // Configurar os ícones de marcadores
+    let DefaultIcon = L.icon({
+        iconUrl: markerIcon,
+        iconRetinaUrl: markerIcon2x,
+        shadowUrl: markerShadow,
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        tooltipAnchor: [16, -28],
+        shadowSize: [41, 41]
+    });
+
+    // Ajustar as opções padrão de ícones
+    L.Marker.prototype.options.icon = DefaultIcon;
 
     return (
         <MapContainer
