@@ -61,7 +61,7 @@ export function ConteudoInicio() {
             <h1 style={{ marginTop: '100px' }}>Campinas,   {temperatura !== null ? `${temperatura}°C` : 'Carregando...'}</h1>
             <div className={estilos.linha}></div>
             <h2>{dataHora !== null ? dataHora : 'Carregando...'}</h2>
-            <button className={estilos.botao} onClick={abrirModal}>Bem vindo, {usuario}!</button>
+            <button className={estilos.botao} onClick={abrirModal}>Bem vindo, {usuario}! Clique e conheça o Projeto aqui</button>
             {modalAberto && (
                 <div className={estilos.modal}>
                     <div className={estilos.modalConteudo}>
